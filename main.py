@@ -9,6 +9,6 @@ print('loop start')
 while True:
     # cheek for all events
     for event in  pygame.event.get():
-        if event.type == pygame.QUIT:
+        if event.type == pygame.QUIT:# otaro
             pygame.quit() # close window
             quit() # end pygame
