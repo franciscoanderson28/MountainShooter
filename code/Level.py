@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 import pygame
 
-from code.entity import Entity
-from code.entityFactory import EntityFactory
+from code.Entity import Entity
+from code.EntityFactory import EntityFactory
 
 
 class Level:
@@ -18,6 +18,6 @@ class Level:
         while True:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
+                ent.move()
             pygame.display.flip()
-
         pass
